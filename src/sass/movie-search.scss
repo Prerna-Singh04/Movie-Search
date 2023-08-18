@@ -1,0 +1,68 @@
+.movie_search {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(242, 240, 240);
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0px;
+  }
+
+  .movie_search_input {
+    width: 18vw;
+    height: 38px;
+    border: none;
+    outline: none;
+    overflow: scroll;
+    margin: 0px 30px;
+    text-align: center;
+    background: transparent;
+    border-bottom: 2px solid;
+    @media screen and (max-width: 768px) {
+      width: 50vw;
+      margin: 10px;
+    }
+  }
+
+  .movie_search_input::placeholder {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .movie_type_dropdown,
+  .movie_search_control {
+    width: 9vw;
+    height: 38px;
+    border: none;
+    outline: none;
+    margin: 0px 30px 0px 0px;
+    text-align: center;
+    border-radius: 5px;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    @media screen and (max-width: 768px) {
+      margin: 5px 5px 30px !important;
+      width: 35vw;
+    }
+
+    .optionGroup {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .movie_type_dropdown :hover {
+    background: #917523;
+  }
+  .movie_search_control {
+    background-color: #198754;
+  }
+  .movie_search_control:hover {
+    background-color: #13653f;
+  }
+}
